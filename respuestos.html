@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap demo</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <center>
+    <div class="button-container">
+      <a href="index.html"><img src="Logo.png" width="130" height="100" left></a>
+      <button type="button" class="btn btn-outline-danger"><a class="nav-link" href="index.html">Inicio</a></button> 
+      <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="cita.html">Citas</a></button> 
+      <button type="button" class="btn btn-outline-danger"><a class="nav-link" href="precio.html">Precios</a></button> 
+      <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="respuestos.html">Respuestos</a></button>
+      <button type="button" class="btn btn-outline-danger"><a class="nav-link" href="preguntas.html">Preguntas</a></button> 
+
+    <a href="index.html"><img src="Logo.png" width="130" height="100" left></a>
+    </center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<style>
+  body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+  .container {
+      width: 80%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+      text-align: center;
+  }
+  form {
+      margin-top: 20px;
+  }
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+  input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  input[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+</style>
+  <body>
+      <div class="card-group">
+        <div class="card">
+          <img src="Filtro de aceite.jpg" width="130" height="500" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Filtro de aceite</h5>
+            <p class="card-text">es el encargado de proteger el circuito de lubricación de cualquier tipo de impurezas 
+              y otros agentes externos que puedan perjudicar el rendimiento del aceite y la vida útil del motor.
+            </p>
+            <a href="https://www.amazon.es/Magneti-Marelli-1100696-Filtro-aceite/dp/B00D75SPSY" class="btn btn-primary">Visitar Página</a>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="Filtro de combustible.jpg" width="130" height="500" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Filtro de combustible</h5>
+            <p class="card-text">Este elemento cumple la función de ser una barrera que evite la llegada de impurezas al circuito de inyección,
+              bomba de presión y al circuito de alimentación. Para este caso lo óptimo es cambiarlo cada 10 000 kilómetros.
+               </p>
+               <a href="https://www.amazon.com/-/es/Filtro-combustible-multifuncional-transparente-instalar/dp/B0BRWVQ34C" class="btn btn-primary">Visitar Página</a>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Filtro de aire.jpg" width="130" height="500" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Filtro de Aire</h5>
+            <p class="card-text"> Este tipo de filtro también tiene la función de retener impurezas, pero este ayuda a proteger el motor, 
+              evitando que se contamine la cámara de combustión. Además, previene el degrado de las paredes de los cilindros. 
+            </p>
+            <a href="https://www.amazon.com/-/es/Universal-entrada-filtro-limpio-lavable/dp/B00AEU3PGW" class="btn btn-primary">Visitar Página</a>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card-group">
+        <div class="card">
+          <img src="Aceite hidraulico.jpg" width="80" height="700" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Aceite hidraulico</h5>
+            <p class="card-text"> Este elemento cumple la función de ser una barrera que evite la llegada de impurezas al circuito de inyección,
+              bomba de presión y al circuito de alimentación. Para este caso lo óptimo es cambiarlo cada 10 000 kilómetros.
+              </p>
+               <a href="https://www.amazon.com/-/es/Aceite-Hidr%C3%A1ulico-%C3%81mbar-30W-gal/dp/B076FBPKHM" class="btn btn-primary">Visitar Página</a>
+               <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="Coolant.jpg" width="80" height="700" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Coolant</h5>
+            <p class="card-text">Refrigerante anticongelante, 1 gal., 50/50 - AF2100
+              Formulado para trabajar con todos los vehículos. Funciona con todos los colores fluidos; todos los colores de avena, papa, calor e IAT.
+              Garantía de vida útil más larga del motor: 10 años, fórmula de vida extendida de 300,000 millas
+              Incluye tecnología patentada Prestone CorGuard, nuestro mejor avance en la protección de piezas del sistema de refrigeración que protege contra el óxido y la corrosión de todos los metales del sistema de refrigeración, incluido el aluminio. Protección para 300,000 millas.
+              </p>
+               <a href="https://www.amazon.com/Prestone-DEX-Cool-Extended-Prediluted-Antifreeze/dp/B08JQPS9N9" class="btn btn-primary">Visitar Página</a>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="frenos.jpg" width="80" height="700" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Liquido de frenos</h5>
+            <p class="card-text">El líquido de frenos, un tipo de fluido hidráulico, transfiere energía dentro del sistema de frenos de tu auto. Es lo que garantiza que tu auto se detenga cuando ponés el pie en el pedal del freno. Como todos los fluidos hidráulicos, el líquido de frenos no es compresible.
+              </p>
+            <a href="https://www.amazon.com/-/es/601458-L%C3%ADquido-de-frenos-32OZ/dp/B07FLP1GVV" class="btn btn-primary">Visitar Página</a>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card-group">
+        <div class="card">
+          <img src="bujias.jpg" width="130" height="500" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Bujias</h5>
+            <p class="card-text"> Las bujías de iridio mejoradas en el rendimiento aumentan el rendimiento, reducen las emisiones y logran una mejor economía de combustible para mantener su motor funcionando al máximo. Carcasa duradera con revestimiento ultraseal que protege de forma fiable las bujías de daños, asegurando una capacidad de chispa duradera de hasta 20,198 millas
+               </p>
+               <a href="https://www.amazon.com/-/es/Buj%C3%ADas-piezas-autom%C3%B3vil-f%C3%A1brica-compatibles/dp/B0CFV824DZ" class="btn btn-primary">Visitar Página</a>
+               <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="Pastilla de frenos.jpg" width="130" height="500" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Pastilla de frenos</h5>
+            <p class="card-text">Refrigerante anticongelante, 1 gal., 50/50 - AF2100
+              Formulado para trabajar con todos los vehículos. Funciona con todos los colores fluidos; todos los colores de avena, papa, calor e IAT.
+              Garantía de vida útil más larga del motor: 10 años, fórmula de vida extendida de 300,000 millas
+              Incluye tecnología patentada Prestone CorGuard, nuestro mejor avance en la protección de piezas del sistema de refrigeración que protege contra el óxido y la corrosión de todos los metales del sistema de refrigeración, incluido el aluminio. Protección para 300,000 millas.
+              </p>
+               <a href="https://www.amazon.com/-/es/Pastillas-cer%C3%A1mica-tambor-hardware-camioneta/dp/B07KQ9QPPV" class="btn btn-primary">Visitar Página</a>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="bobina.jpg" width="130" height="500" class="card-img-top" alt="200">
+          <div class="card-body">
+            <h5 class="card-title">Bobinas</h5>
+            <p class="card-text">La bobina de encendido es la encargada de proporcionar la corriente a las bujías para que éstas puedan hacer saltar la chispa que actúa el mecanismo de combustión en el motor de tu coche. Debido a que es un componente en constante uso, su mantenimiento y reparación debe ser tenido en cuenta.
+              </p>
+            <a href="https://www.amazon.com/-/es/Bobina-encendido-en-enchufe/dp/B079XX75LW" class="btn btn-primary">Visitar Página</a>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+
+      
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Contáctanos a tráves de nuestras redes sociales:</span>
+    </div>
+    <div>
+      <div class="wrapper">
+        <a href="https://www.facebook.com/?locale=es_LA" class="icon facebook">
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://x.com/?lang=es" class="icon twitter">
+          <div class="tooltip">X</div>
+          <span><i class="fab fa-twitter"></i></span>
+        </a>
+        <a href="https://www.instagram.com/" class="icon instagram">
+          <div class="tooltip">Instagram</div>
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="https://www.whatsapp.com/?lang=es_LA" class="icon instagram">
+          <div class="tooltip">Whatsapp</div>
+          <span><i class="fab fa-whatsapp"></i></span>
+        </a>
+      </div>
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i> Tu taller de mecánica de confianza en Tegucigalpa:
+          </h6>
+          <p>
+            
+
+¿Necesitas que tu vehículo funcione sin problemas? Ven a nuestro taller de mecánica en Comayagüela,
+donde ofrecemos una amplia gama de servicios para mantener tu coche en óptimas condiciones.
+
+Somos un equipo de mecánicos expertos y experimentados que se apasionan por los automóviles. 
+Nos enorgullecemos de brindar un servicio de alta calidad a precios competitivos.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Taller
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Mecánica general</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Reemplazo e instalación de piezas dañadas.
+            </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Mantenimiento preventivo</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Diagnosticar e informar fallas</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Car wash
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Lavado con vapor</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Restauración de faros</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Detallado</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Lavado y secado</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Tegucigalpa, anillo periférico</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            lópeztallerdemecánica@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 504 9580 2350</p>
+          <p><i class="fas fa-print me-3"></i> + 504 9767 8597</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 PROYECTO:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Lópeztallerdemecánica.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

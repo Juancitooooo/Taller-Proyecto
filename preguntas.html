@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Boostrap demo</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    <!-- Agrega los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<center>
+    <div class="button-container">
+      <a href="index.html"><img src="Logo.png" width="130" height="100" left></a>
+      <button type="button" class="btn btn-outline-danger"><a class="nav-link" href="index.html">Inicio</a></button> 
+      <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="cita.html">Citas</a></button> 
+      <button type="button" class="btn btn-outline-danger"><a class="nav-link" href="precio.html">Precios</a></button> 
+      <button type="button" class="btn btn-outline-dark"><a class="nav-link" href="respuestos.html">Respuestos</a></button>
+      <button type="button" class="btn btn-outline-danger"><a class="nav-link" href="preguntas.html">Preguntas</a></button> 
+
+
+    <a href="index.html"><img src="Logo.png" width="130" height="100" left></a>
+    </center>
+<br>
+<br>
+<br>
+<style>
+  body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+  .container {
+      width: 80%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+      text-align: center;
+  }
+  form {
+      margin-top: 20px;
+  }
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+  input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  input[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+</style>
+<body>
+    <div class="container mt-5">
+        <!-- Preguntas y respuestas con el componente de acordeón -->
+        <div class="accordion" id="faqAccordion">
+            <!-- Pregunta 1 -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Donde estan ubicados?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Estamos ubicados en al anillo periferico.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pregunta 2 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Porque los precios son caros?
+                        </button>
+                        
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Porque cobramos lo que sabemos y le solucionamos todo
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Como es el pago?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Aceptamos transferencia o pago en fisico
+                    </div>
+                </div>
+            <!-- Agrega más preguntas y respuestas aquí -->
+        </div>
+    </div>
+
+    <!-- Agrega los scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<br>
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Contáctanos a tráves de nuestras redes sociales:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <div class="wrapper">
+          <a href="https://www.facebook.com/?locale=es_LA" class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+          <a href="https://x.com/?lang=es" class="icon twitter">
+            <div class="tooltip">X</div>
+            <span><i class="fab fa-twitter"></i></span>
+          </a>
+          <a href="https://www.instagram.com/" class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+          <a href="https://www.whatsapp.com/?lang=es_LA" class="icon instagram">
+            <div class="tooltip">Whatsapp</div>
+            <span><i class="fab fa-whatsapp"></i></span>
+          </a>
+        </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i> Tu taller de mecánica de confianza en Tegucigalpa:
+            </h6>
+            <p>
+              
+  
+  ¿Necesitas que tu vehículo funcione sin problemas? Ven a nuestro taller de mecánica en Comayagüela,
+  donde ofrecemos una amplia gama de servicios para mantener tu coche en óptimas condiciones.
+  
+  Somos un equipo de mecánicos expertos y experimentados que se apasionan por los automóviles. 
+  Nos enorgullecemos de brindar un servicio de alta calidad a precios competitivos.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Taller
+            </h6>
+            <p>
+              <a  class="text-reset">Mecánica general</a>
+            </p>
+            <p>
+              <a  class="text-reset">Reemplazo e instalación de piezas dañadas.
+              </a>
+            </p>
+            <p>
+              <a  class="text-reset">Mantenimiento preventivo</a>
+            </p>
+            <p>
+              <a  class="text-reset">Diagnosticar e informar fallas</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Car wash
+            </h6>
+            <p>
+              <a  class="text-reset">Lavado con vapor</a>
+            </p>
+            <p>
+              <a  class="text-reset">Restauración de faros</a>
+            </p>
+            <p>
+              <a  class="text-reset">Detallado</a>
+            </p>
+            <p>
+              <a  class="text-reset">Lavado y secado</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Tegucigalpa, anillo periférico</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              lópeztallerdemecánica@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 504 9580 2350</p>
+            <p><i class="fas fa-print me-3"></i> + 504 9767 8597</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 PROYECTO:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Lópeztallerdemecánica.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+  </html>
+</html>
